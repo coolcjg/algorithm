@@ -13,7 +13,7 @@ public class IndexOfTester {
 		String s2 = "이지스";
 		
 		int idx1 = s1.indexOf(s2);
-		int idx2 = s1.lastIndexOf(s2);
+		int idx2 = s1.lastIndexOf(s2); 
 		
 		if(idx1 == -1)
 			System.out.println("텍스트 안에 패턴이 없습니다.");
