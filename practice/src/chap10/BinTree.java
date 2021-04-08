@@ -165,5 +165,18 @@ public class BinTree<K,V> {
 		
 	}
 	
+	private void printSubTree(Node node) {
+		if(node != null) {
+			printSubTree(node.left);
+			System.out.println(node.key + " " + node.data);
+			printSubTree(node.right);
+		}
+	}
+	
+	//모든 노드를 키 값의 오름차순으로 출력
+	public void print() {
+		printSubTree(root);
+	}
+	
 
 }
